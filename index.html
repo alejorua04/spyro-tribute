@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SPYRO</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="spyro-tribute-header-and-background.css">
+        <link rel="stylesheet" href="spyro-tribute-main.css">
+        <script src="https://kit.fontawesome.com/54362ceccb.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Secular One' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="overlay">
+            <header>
+
+                <!--LOGO AND NAVIGATION LIST-->
+
+                <img src="https://i.ibb.co/LrB0TMy/Logo-de-Spyro.png" alt="Logo-de-Spyro" border="0" id="logo-spyro">
+
+                <!--DROPDOWN BUTTON-->
+
+                <div class="button-container" onclick="myFunction(), myTwist(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </header>
+            <main id="main">
+
+                <!--MENU LIST-->
+
+                <div id="videogames-list-id" class="videogames-list">
+                    <ul>
+                        <h2 id="videogames-list-title">Menu</h2>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#image-gallery-container">GALLERY</a></li>
+                        <li><a href="#profile-viewer">PROFILES</a></li>
+                        <li><a href="#footer">FOOTER</a></li>
+                    </ul>
+                </div>
+
+                <!--MAIN WALLPAPER-->
+
+                <figure id="img-div">
+                    <img src="https://i.ibb.co/f9mNx8W/Spyro-Wallpaper2.jpg" alt="Spyro-Wallpaper2" border="0" id="image">
+                    <div id="border"></div>
+                    <figcaption>Source: https://alphacoders.com/users/profile/148956</figcaption>
+                </figure>
+                <p id="tribute-info">Spyro the Dragon is the main protagonist and titular character of the Spyro the Dragon series and 
+                    a former mascot for the Sony PlayStation. This iteration is the most prolific, having starred in 10 games, 
+                    with one prominent featuring role and a couple of cameos in Crash Bandicoot games. <br><br>
+                    Here you can find more information about <a id="tribute-link" href="https://spyro.fandom.com/wiki/Spyro_the_Dragon_(character)" target="_blank">Spyro</a>
+                </p>
+
+                <!--DIVIDER-->
+
+                <div id="top-divider"></div>    
+                <div id="main-divider"></div>
+                <div id="bottom-divider"></div>
+
+                <!--IMAGE GALLERY CONTAINER-->
+
+                <h2 class="section-titles">Gallery</h2>
+                <div id="image-gallery-container">
+
+                    <!--SLIDES CONTAINER-->
+
+                    <div class="slider">
+                        <img src="https://i.ibb.co/6wGy3S3/Gallery1.png" alt="Sgt Byrd's Base" border="0">
+                    </div>
+                    <div class="slider">
+                        <img src="https://i.ibb.co/jr6dQcp/Gallery2.png" alt="Agent 9's Lab" border="0">
+                    </div>
+                    <div class="slider">
+                        <img src="https://i.ibb.co/ZWL27LV/Gallery3.png" alt="Buzz's Dungeon" border="0">
+                    </div>
+                    <div class="slider">
+                        <img src="https://i.ibb.co/svt9mS1/Gallery4.png" alt="Spooky Swamp" border="0">
+                    </div>
+                    <div class="slider">
+                        <img src="https://i.ibb.co/HTFTPqj/Gallery5.png" alt="Crush's Dungeon" border="0">
+                    </div>
+                    <div class="slider">
+                        <img src="https://i.ibb.co/LhCCss2/Gallery6.png" alt="Desert Ruins" border="0">
+                    </div>
+
+                    <!--NAVIGATION BUTTONS AND CAPTION CONTAINER-->
+
+                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!--THUMBNAILS CONTAINER-->
+
+                    <div class="row">
+                        <div class="thumbnail">
+                            <img class="demo cursor" src="https://i.ibb.co/6wGy3S3/Gallery1.png" onclick="currentSlide(1)" alt="Sgt Byrd's Base">
+                        </div>
+                        <div class="thumbnail">
+                            <img class="demo cursor" src="https://i.ibb.co/jr6dQcp/Gallery2.png" onclick="currentSlide(2)" alt="Agent 9's Lab">
+                        </div>
+                        <div class="thumbnail">
+                            <img class="demo cursor" src="https://i.ibb.co/ZWL27LV/Gallery3.png" onclick="currentSlide(3)" alt="Buzz's Dungeon">
+                        </div>
+                        <div class="thumbnail">
+                            <img class="demo cursor" src="https://i.ibb.co/svt9mS1/Gallery4.png" onclick="currentSlide(4)" alt="Spooky Swamp">
+                        </div>
+                        <div class="thumbnail">
+                            <img class="demo cursor" src="https://i.ibb.co/HTFTPqj/Gallery5.png" onclick="currentSlide(5)" alt="Crush's Dungeon">
+                        </div>
+                        <div class="thumbnail">
+                            <img class="demo cursor" src="https://i.ibb.co/LhCCss2/Gallery6.png" onclick="currentSlide(6)" alt="Desert Ruins">
+                        </div>
+                    </div>
+                </div>
+
+                <!--CHARACTER PROFILES-->
+
+                <h2 class="section-titles">Character Profiles</h2>
+                <div class="main-container" id="profile-viewer">
+                    <div class="overlay2">
+                        <i class="fa-solid fa-indent"></i>
+                        <img src="https://i.ibb.co/dkVGmgH/Logo-de-Spyro-T.png" alt="Logo-de-Spyro-T" border="0" class="logo-de-spyro-y">
+                        <i class="fa-solid fa-info"></i>
+                        <input id="profile-spyro" type="radio" name="profile-buttons">
+                        <label id="profile-button-spyro" class="profile-button" for="profile-spyro">Spyro</label>
+                        <input id="profile-sparx" type="radio" name="profile-buttons">
+                        <label id="profile-button-sparx" class="profile-button" for="profile-sparx">Sparx</label>
+                        <input id="profile-gnasty-gnorc" type="radio" name="profile-buttons">
+                        <label id="profile-button-gnasty-gnorc" class="profile-button" for="profile-gnasty-gnorc">Gnasty Gnorc</label>
+                        <input id="profile-hunter" type="radio" name="profile-buttons">
+                        <label id="profile-button-hunter" class="profile-button" for="profile-hunter">Hunter</label>
+                    <div class="description-container" id="spyro">
+                        <div class="image-container">
+                            <img src="https://i.ibb.co/2tW0fvM/SpyroT.png" alt="SpyroT" border="0" class="spyrot">
+                        </div>
+                        <div class="description-text">
+                            <h1 class="character-title"> Spyro the Dragon </h1>
+                            <p class="description"> 
+                                Spyro is known for being courageous, headstrong, eager, and arrogant. He has an immutable sense of heroism, friendliness,
+                                and has a fiery personality. He has little concern for his safety and can be irresponsible at times, being extremely curious
+                                and hardly ever cautious, which could get him into trouble. Spyro gets into lots of mischief and is known to be cocky,
+                                a trait that can lead to his downfall and blunder.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="description-container" id="sparx">
+                        <div class="image-container">
+                            <img src="https://i.ibb.co/2sDP1XF/SparxT.png" alt="SparxT" border="0" class="sparxt">
+                        </div>
+                        <div class="description-text">
+                            <h1 class="character-title"> Sparx the Dragonfly </h1>
+                            <p class="description"> 
+                                Throughout the series, Spyro has always appeared with Sparx at his side. In the Dragon Realms, according to Spyro: Enter the
+                                Dragonfly, dragonflies offer protection for young dragons such as Spyro. Without Sparx, Spyro would be susceptible to being
+                                killed or defeated in a single hit.He too has the same mischievous personality as Spyro, but he is very protective of him.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="description-container" id="gnasty-gnorc">
+                        <div class="image-container">
+                            <img src="https://i.ibb.co/j6T3DDQ/Gnasty-Gnorc-T.png" alt="Gnasty-Gnorc-T" border="0" class="gnasty-gnorct">
+                        </div>
+                        <div class="description-text">
+                            <h1 class="character-title"> Gnasty Gnorc </h1>
+                            <p class="description"> 
+                                Gnasty Gnorc is very smart, and calculating, as shown when he executes his plot to take over the Dragon Realms and freezes the
+                                Dragons in crystal with ease. Despite this, he is a mean, ugly, greedy, unruly, bad-tempered, and "nasty" Gnorc who hates Dragons.
+                                He is also extremely cowardly, seeming to run at the slimmest sight of danger.The Dragons see him as unintelligent, and he is 
+                                sensitive about his appearance and will not hesitate to attack those who stand in his way. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="description-container" id="hunter">
+                        <div class="image-container">
+                            <img src="https://i.ibb.co/d40HGh7/HunterT.png" alt="HunterT" border="0" class="huntert">
+                        </div>
+                        <div class="description-text">
+                            <h1 class="character-title"> Hunter the Cheetah </h1>
+                            <p class="description"> 
+                                Hunter is a laid-back, physically talented, and somewhat gullible character. While he's a loyal friend to Spyro and is knowledgeable
+                                about basic tasks, he has trouble grasping the gravity of Spyro's missions. Hunter is, at times, naïve and cowardly, and he can be
+                                tricked relatively easily. He is also forgetful as seen when he told Spyro that he lost his running shoes and hasn't found them since. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </main>
+            <footer id="footer">
+                <h2 class="section-titles">Social Media</h2>
+                <div id="social-media-row">
+                    <a href="https://es-la.facebook.com/spyro/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://twitter.com/spyrothedragon" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/spyro/?hl=es" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.youtube.com/c/SpyroTheDragon" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                    <i class="fa-brands fa-square-snapchat"></i>
+                </div>
+                <hr>
+                <p id="footer-info">The content that appears on this page does not belong to me, it is meant for educational purposes only.
+                    All copyrights belong to Activision.        
+                </p>
+            </footer>
+        </div>
+
+        <!--DROPDOWN MENU SCRIPT-->
+
+        <script>
+            function myFunction() {
+              document.getElementById("videogames-list-id").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+            if (!event.target.matches('.button-container')) {
+              var dropdowns = document.getElementsByClassName(".videogames-list");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+        </script>
+
+        <!--BARS ANIMATION SCRIPT-->
+
+        <script>
+            function myTwist(x) {
+                x.classList.toggle("change");
+            }
+        </script>
+
+        <!--IMAGE GALLERY SCRIPT-->
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("slider");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+    </body>
+</html>

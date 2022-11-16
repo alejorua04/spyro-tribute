@@ -1,0 +1,568 @@
+/*WALLPAPER IMAGE*/
+
+
+#main {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+#title {
+    text-align: center;
+    font-family: 'Rye', cursive;
+    font-size: 3em;
+    color: rgb(62, 9, 112);
+    text-shadow: 2px 2px goldenrod;
+}
+#img-div {
+    width: 100%;
+    margin: 0 auto;
+}
+#image {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 1px 30px goldenrod;
+}
+#border {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(gold, goldenrod);
+}
+#img-div figcaption {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: goldenrod;
+    text-shadow: 1px 1px rgb(62, 9, 112);
+    font-size: 1em;
+    margin: 10px 0;
+}
+#tribute-info {
+    text-align: center;
+    color: white;
+    display: block;
+    margin: 40px 20%;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px goldenrod;
+}
+#tribute-link {
+    color: goldenrod;
+}
+#top-divider {
+    width: 100%;
+    height: 5px;
+    background-color: goldenrod;
+    margin: 5px 0;
+    box-shadow: 1px 1px 1px 1px gold;
+}
+#main-divider {
+    width: 100%;
+    height: 20px;
+    background-color: goldenrod;
+    box-shadow: 1px 1px 1px 1px gold;
+}
+#bottom-divider {
+    width: 100%;
+    height: 5px;
+    background-color: goldenrod;
+    margin: 5px 0;
+    box-shadow: 1px 1px 1px 1px gold;
+}
+
+
+/*IMAGE GALLERY*/
+
+
+.section-titles {
+    font-family: Kaushan Script;
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px goldenrod;
+    text-align: center;
+    padding: 40px 0;
+}
+#image-gallery-container {
+    position: relative;
+    width: 90%;
+    margin: 25px auto;
+}
+.slider {
+    display: none;
+}
+.slider img {
+    width: 100%;
+}
+.cursor {
+    cursor: pointer;
+}
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    background-color: goldenrod;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+}
+.previous:hover, .next:hover {
+    background-color: gold;
+}
+.caption-container {
+    text-align: center;
+    background-color: goldenrod;
+    padding: 10px 10px;
+    color: white;
+}
+#caption {
+    font-family: Kaushan Script;
+    text-shadow: 1px 1px goldenrod;
+    font-size: 1.2em;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.thumbnail {
+    float: left;
+    width: 16.66%;
+}
+.thumbnail img {
+    width: 100%;
+}
+.demo {
+    opacity: 0.6;
+}
+.active, .demo:hover {
+    opacity: 1;
+}
+
+
+
+/*PROFILES*/
+
+
+
+.main-container {
+    position: relative;
+    display: flex;
+    width: 70%;
+    margin: 10px auto 29px;
+    padding: 0;
+    height: 500px;
+    background-image: url("https://i.ibb.co/qWwqTqm/Fondo-div5.jpg");
+    background-size: cover;
+    margin-top: 28px;
+    z-index: 1;
+    border-radius: 32px;
+    box-shadow: 1px 1px 1px black;
+}
+.overlay2 {
+    background: linear-gradient(rgb(138, 43, 226, 0.7), rgb(62, 9, 112, 0.7));
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    border-radius: 32px;
+}
+.fa-indent {
+    position: absolute;
+    font-size: 30px;
+    color: rgb(255, 200, 0);
+    padding: 0%;
+    margin: 0%;
+    left: 60px;
+    top: 35px;
+}
+.logo-de-spyro-y {
+    position: absolute;
+    height: 65px;
+    left: 105px;
+    top: 18px;
+    color: yellow;
+}
+.fa-info {
+    position: absolute;
+    font-size: 25px;
+    color: rgb(255, 200, 0);
+    top: 38px;
+    left: 260px;
+}
+
+/*Profiles Navigation Bar*/
+
+.profile-button {
+    position: relative;
+    display: inline-table;
+    padding: 15px;
+    margin: 0 15px;
+    top: 10%;
+    text-align: center;
+    color: black;
+    background-image: url(Spyro-button.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+    font-family: Kaushan Script;
+    border-radius: 5px;
+    left: 45%;
+}
+.profile-button:hover {
+    transform: scale(1.1);
+}
+#profile-spyro {
+    display: none;
+}
+#profile-spyro:checked ~ #spyro {
+    display: flex;
+}
+#profile-sparx {
+    display: none;
+}
+#profile-sparx:checked ~ #sparx {
+    display: flex;
+}
+#profile-sparx:checked ~ #spyro {
+    display: none;
+}
+#profile-gnasty-gnorc {
+    display: none;
+}
+#profile-gnasty-gnorc:checked ~ #gnasty-gnorc {
+    display: flex;
+}
+#profile-gnasty-gnorc:checked ~ #spyro, #sparx {
+    display: none;
+}
+#profile-hunter {
+    display: none;
+}
+#profile-hunter:checked ~ #hunter {
+    display: flex;
+}
+#profile-hunter:checked ~ #spyro, #sparx, #gnasty-gnorc {
+    display: none;
+}
+
+/*Description Containers*/
+
+/*Spyro*/
+
+#spyro {
+    display: flex;
+}
+.spyrot {
+    max-height: 90%;
+    position: absolute;
+}
+
+/*Sparx*/
+
+#sparx {
+    display: none;
+}
+.sparxt {
+    max-height: 70%;
+    position: absolute;
+}
+
+/*Gnasty Gnorc*/
+
+#gnasty-gnorc {
+    display: none;
+}
+.gnasty-gnorct {
+    max-height: 90%;
+    position: absolute;
+}
+
+/*Hunter*/
+
+#hunter {
+    display: none;
+}
+.huntert {
+    max-height: 90%;
+    position: absolute;
+}
+
+/*Title and Description*/
+
+.description-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    top: 100px;
+    height: 400px;
+    width: 100%;
+}
+.image-container {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 350px;
+}
+.character-title {
+    font-family: Kaushan Script;
+    color: goldenrod;
+    text-shadow: 2px 2px black;
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.description {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    text-shadow: 2px 2px black;
+    text-align: justify;
+}
+@media only screen and (max-width: 600px) {
+    .fa-indent {
+        visibility: hidden;
+    }
+    .fa-info {
+        visibility: hidden;
+    }
+    .logo-de-spyro-y {
+        height: 40px;
+        left: 38%;
+        top: 2%;
+    }
+    .profile-button {
+        padding: 5px;
+        margin: 0 5px;
+        left: 5%;
+        top: 11%;
+    }
+    .description-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 130px;
+        height: 300px;
+    }
+    .spyrot {
+        max-height: 50%;
+    }
+    .sparxt {
+        max-height: 45%;
+    }
+    .gnasty-gnorct {
+        max-height: 50%;
+    }
+    .huntert {
+        max-height: 50%;
+    }
+    .description-text {
+        top: 40px;
+        width: 85%;
+    }
+    .character-title {
+        font-size: 1.4em;
+    }
+    .description {
+        font-size: 0.9em;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .logo-de-spyro-y {
+        height: 50px;
+        left: 38%;
+        top: 2%;
+    }  
+    .fa-indent {
+        visibility: hidden;
+    }
+    .fa-info {
+        visibility: hidden;
+    }
+    .profile-button {
+        padding: 5px;
+        margin: 0 5px;
+        left: 12.5%;
+        top: 12%;
+    }
+    .description-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 145px;
+        height: 300px;
+    }
+    .spyrot {
+        max-height: 60%;
+    }
+    .sparxt {
+        max-height: 55%;
+    }
+    .gnasty-gnorct {
+        max-height: 55%;
+    }
+    .huntert {
+        max-height: 60%;
+    }
+    .description-text {
+        top: 40px;
+        width: 85%;
+    }
+    .character-title {
+        font-size: 1.3em;
+        padding-bottom: 10px;
+    }
+    .description {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .logo-de-spyro-y {
+        height: 70px;
+        left: 38%;
+        top: 2%;
+    }  
+    .fa-indent {
+        visibility: hidden;
+    }
+    .fa-info {
+        visibility: hidden;
+    }
+    .profile-button {
+        padding: 10px;
+        margin: 0 5px;
+        left: 18%;
+        top: 18%;
+    }
+    .description-container {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 145px;
+        height: 300px;
+    }
+    .image-container {
+        width: 30%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .spyrot {
+        max-height: 70%;
+    }
+    .sparxt {
+        max-height: 65%;
+    }
+    .gnasty-gnorct {
+        max-height: 65%;
+    }
+    .huntert {
+        max-height: 70%;
+    }
+    .description-text {
+        width: 50%;
+        height: 350px;
+    }
+    .character-title {
+        font-size: 1.3em;
+        padding-bottom: 10px;
+    }
+    .description {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .profile-button {
+        padding: 10px;
+        margin: 0 5px;
+        left: 44%;
+        top: 7%;
+    }
+    .character-title {
+        font-size: 2.5em;
+        padding-bottom: 20px;
+    }
+}
+
+
+/*FOOTER*/
+
+
+footer::before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(gold, goldenrod);
+}
+footer {
+    background: linear-gradient(blueviolet, rgb(62, 9, 112));
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+#social-media-row {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fa-square-facebook, 
+.fa-square-twitter, 
+.fa-square-instagram , 
+.fa-square-youtube, 
+.fa-square-snapchat {
+    font-size: 3em;
+    color: goldenrod;
+}
+.fa-square-facebook:hover, 
+.fa-square-twitter:hover, 
+.fa-square-instagram:hover , 
+.fa-square-youtube:hover, 
+.fa-square-snapchat:hover {
+    color: gold;
+}
+hr {
+    height: 5px;
+    background-color: goldenrod;
+    width: 70%;
+    border: none;
+    margin: 40px auto;
+}
+#footer-info {
+    text-align: center;
+    color: white;
+    display: block;
+    width: 60%;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px goldenrod;
+    margin-bottom: 40px;
+}
